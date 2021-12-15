@@ -8,7 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ARTECAUCANO</title>
     <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Opep" rel="stylesheet"> 
 </head>
 
@@ -33,13 +32,11 @@
             </svg></div>
     
     </header>
-    <main>
         <section class="contenedor sobre-nosotros">
            
             <div class="contenedor-sobre-nosotros">
                 <img src="img/d9c6.jpg" alt="" class="imagen-about-us">
                 <div class="contenido-textos">
-                    <h3></h3>
                     <p>Se orienta actualmente a descubrir, dignificar y organizar al artesano caucano, con el fin de crear una base humana de calidades superiores, capaz de producir una artesanía que sin perder ni deformar sus raíces, esté a la altura de las necesidades contemporáneas tanto en el aspecto utilitario como en el aspecto estético, creando un puente entre la modernidad y la parte ancestral para la comercialización de productos del departamento.</p>
             
                   
@@ -47,7 +44,7 @@
             </div>
         </section>
         <section class="productos">
-            <div class="contenedor">
+              <div class="contenedor">
                 <h2 class="titulo">Productos</h2>
                 <div class="galeria-port">
                     <div class="imagen-port">
@@ -109,6 +106,7 @@
                     </div>
                 </div>
             </div>
+            </section>
             <section class="productos">
                 <div class="contenedor">
             <div class="galeria-port">
@@ -206,7 +204,7 @@
                     </div>
                 </div>
             </div>
-      
+      </section>
             <div class="contenedor-footer">
                 <div class="content-foo">
                     <h4>Carrito de compras</h4>
@@ -214,7 +212,8 @@
                     <img src="img/icons8-efectivo-en-mano-64.png" width="25px" height="25px">
                     <img src="img/icons8-tarjeta-amarilla-80.png" width="25px" height="25px">
                 </div>
-
+                </div>
+<footer>
     </footer>
 </body>
 
