@@ -1,147 +1,117 @@
 <template>
+  <div>
 
-    <div>
-    <body>
-    
+<body>
+        <RegistroC />
+        <br>
+<html lang="es">
 <head>
-    <title>Formulario</title>
-    <meta charset="utf-8">
-</head>
- 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulario de Acceso </title>
 
-<!-- <link rel="icon" href="../assets/Iconos/Isotipo_icono.icp"> -->
-
-    <div id="registrar">
         
-    </div>
-    <div id="envoltura">
+          <link rel="icon" href="../assets/Iconos/Isotipo_icono.ico">
+        
+       <meta name="description" content="Muestra de un formulario de acceso en HTML y CSS">
+        <meta name="keywords" content="Formulario Acceso, Formulario de LogIn">
+        
+        <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+        
+        <!-- Link hacia el archivo de estilos css -->
+     </head>
+    
+    <body>
+        
         <div id="contenedor">
- 
-            <div id="cabecera">
-                <h1>Bienvenido</h1>
-            </div>
- 
-            <div id="cuerpo">
- 
-                <form id="form-login" action="#" method="post" >
-                        <input  name="nombre" type="text" id="nombre" class="nombre" placeholder="Nombres" autofocus="">
+            <div id="central">
+                <div id="login">
+                    <div class="titulo">
+                        Bienvenido
+                    </div>
+                    <form id="loginform">                        
+                    <input  name="nombre" type="text" id="nombre" class="nombre" placeholder="Nombres" autofocus="">
                        <input name="apellidos" type="text" id="apellidos" class="apellidos" placeholder="Apellidos" />
                        <input name="correo" type="text" id="correo" class="correo" placeholder="Correo" />
                         <input name="pass" type="password" id="pass" class="pass" placeholder="Contraseña">
                         <input name="repass" type="password" id="repass" class="repass" placeholder="Repite contraseña" />
  
-                       
+                             <router-link to="/"> <button type="submit" title="Ingresar" name="Ingresar" >Acceder</button>
+                                                                                         </router-link>
+                          
 
-                    <p id="bot"> 
-                        <a href="Acceder.html">
-                        <button type="submit" title="Registrarse" name="Registrarse">Registrarse</button>
-                    </a>
-                    </p>
-                  
-                </form>
+                    </form>
+
+
+
+                </div>
+
+
             </div>
- 
-            <div id="pie">Sistema de Login Y Registro</div>
-        </div><!-- fin contenedor -->
- <br>
-        <!-- <a href="Index.html">Atras</a> -->
-    </div>
- 
-</body>
+        </div>
+        
+             <a class="derechos" >© 2021 Grupo CaucArte. Todos los derechos reservados.
+        El contenido de este sitio está  destinado solo para el
+         área de artesanías.</a>
 
- 
+    </body>
+</html>
+        
+    </body>
     </div>
 </template>
 
+
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
+import RegistroC from "@/components/RegistroC.vue"; // @ is an alias to /src
+
+@Component({
+  components: {
+    RegistroC,
+  },
+})
+export default class Home extends Vue {}
+</script>
 <style scoped>
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  
-    
+}    
+#contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
-
-body{
-    background-image: url(../assets/Logo/fondo.png);
-    color:#000000;
-
-    text-align: center;
-   
-}
- 
-#registrar{
-        float:left;
-        width:80%;
-        font-size:24px;
-        font-weight:bold;
-        color:#FFF;
-        text-align:right;
-}
- 
-#envoltura{
-        position:absolute;
-    /*left y top al 50% para que quede centrado en la pantalla*/
-    left:50%;
-    top:50%;
-    margin-left:-165px;
-    margin-top: -210px;
-    width: 380px;
- 
-}
- 
-#contenedor{
-    background-color: #dd406f;
-    /*Margen de sombra alrededor del contenedor 8px negro*/
-    box-shadow: 3px 3px 10px 5px rgba(0,0,0,.8);
-    /*Las 3 líneas siguientes, sirven para el borde redondeado
-     * pero para diferentes navegadores*/
-   
-}
- 
- #cabecera{
-    font-size: 25px;
-   font-family: 'Times New Roman', Times, serif;  
-   
-    margin-bottom: 40px;
- }
- 
- 
- 
- 
-/* input#usuario{
-    background:#ffc url(../assets/logo.png) no-repeat 0 2px; /*probar con #ddf.
-                                                                Para mover arriba-abajo la imagen 'jugar' con 2px, 5px */
-    /*Para que el texto dentro del input se mueva*/
-    /* padding-left: 25px; Sirve para darle espacio ala imagen, probar con 30px 10px y ver comportamiento */
-/*} */
- 
-/* input#contrasenia{
-    background:#ffc url(./images/infinio.jpg) no-repeat 0 5px;
-    padding-left: 25px;
- 
-} */
- 
-.boton{
-    font-family: 'Overpass', sans-serif;
-    font-size: 110%;
-    color:#1b262c;
+#central {
+    max-width: 320px;
     width: 100%;
-    height: 40px;
-    border: none;
- 
-    background-color: #f1a9a3;
-    
-    margin-top: 10px;
 }
- 
-/*Tip estas instrucciones animan al boton enviar
- * para que se vea como si se pulsara*/
-.boton:active{
-    position: relative;
-    top: 3px;
-} 
-#form-login input {
+.titulo {
+    font-size: 250%;
+    color:#000000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#login {
+    width: 100%;
+    padding: 50px 30px;
+    background-color: #3a19cc;
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    box-sizing: border-box;
+}
+#login input {
     font-family: 'Overpass', sans-serif;
     font-size: 110%;
     color: #1b262c;
@@ -160,28 +130,75 @@ body{
     -moz-border-radius: 3px 3px 3px 3px;
     -webkit-border-radius: 3px 3px 3px 3px;
 }
- 
-form,p{
-    margin: 40px;
-   
-}
- 
- /* Estilo del buton */
-#bot button {
-    
+#login button {
     font-family: 'Overpass', sans-serif;
     font-size: 110%;
     color:#1b262c;
     width: 100%;
     height: 40px;
     border: none;
- 
-    background-color: #f1a9a3;
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    background-color: #90cef7;
     
     margin-top: 10px;
 }
- a{
-     font-size: 25px;
- }
+#login button:hover {
+    background-color: #0f4c75;
+    color:#bbe1fa;
+}
 
+.pie-form {
+    font-size: 90%;
+    text-align: center;    
+    margin-top: 15px;
+}
+.pie-form a {
+    display: block;
+    text-decoration: none;
+    color: #bbe1fa;
+    margin-bottom: 3px;
+}
+.pie-form a:hover {
+    color: #0f4c75;
+}
+
+.inferior {
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+.inferior a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 3px;
+}
+
+.inferior a:hover {
+    color: #0915c4;
+}
+body{
+    background-color: rgb(127, 202, 246);
+
+    background-size:cover;
+    background-position:right;
+    background-repeat: no-repeat;
+    text-align: center;
+
+}
+.derechos{
+     display:block;
+            color:rgb(0, 0, 0);
+            text-decoration:none;
+            font-weight:400;
+            font-size:15px;
+            padding:10px;
+            font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            text-transform:uppercase;
+            letter-spacing:1px;
+}
 </style>

@@ -21,7 +21,7 @@
 
         <div class="enlace">
             <h2>Categoría</h2>
-   <section >
+<section >
            <router-link to="/comprador"><a class="link">Aretes</a> </router-link> 
            <router-link to="/bolsoscom" > <a class="link">Bolsos</a></router-link>
            <router-link to="/collarescom" > <a class="link">Collares</a></router-link>
@@ -31,7 +31,7 @@
         </section>
         </div>
         <br>
-                             <h1 >Aretes</h1>
+                             <h1 >Collares</h1>
 
         <hr>
           <br>
@@ -39,8 +39,8 @@
 
 
                      <h4>Opción 1:</h4>
-                     					<img src="../assets/Artesanias/ar1.jpeg" width="10%">
-
+                     					<img src="../assets/Artesanias/c1.jpeg" width="10%">
+<br>
           <nav>
               <ul>
            <!-- <img class="imagen" src="/Imagenes/Aretes/arestes 2 (1).png" alt=""> -->
@@ -110,7 +110,7 @@
         <ul> 
 
             <h4>Opción 2</h4>
-            					<img src="../assets/Artesanias/ar2.jpeg" width="10%">
+            					<img src="../assets/Artesanias/c2.jpeg" width="10%">
 <br>
                <table class="tabla">
      <caption  class="detalle">Detalles</caption> </table>
@@ -173,8 +173,10 @@
                  <hr>
 <br>
                  <h4>opción 3</h4>
-                 					<img src="../assets/Artesanias/ar3.jpeg" width="10%">
-<br>
+                 					<img src="../assets/Artesanias/c3.jpeg" width="10%">
+
+                 <br>
+
          <table class="tabla">
      <caption  class="detalle">Detalles</caption> </table>
                  <table class="tabla">

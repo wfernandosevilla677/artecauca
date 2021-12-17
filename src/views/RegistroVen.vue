@@ -31,17 +31,15 @@
                     <div class="titulo">
                         Bienvenido
                     </div>
-                    <form id="loginform">
-                        <input type="text" name="usuario" placeholder="Usuario" required>
-                        
-                        <input type="password" placeholder="Contraseña" name="password" required>
-                    
-                        <a href="Productos.html">
-                             <router-link to="/"> <button type="submit" title="Ingresar" name="Ingresar" >Acceder</button>
+                    <form id="loginform">                        
+                    <input  name="nombre" type="text" id="nombre" class="nombre" placeholder="Nombres" autofocus="">
+                       <input name="apellidos" type="text" id="apellidos" class="apellidos" placeholder="Apellidos" />
+                       <input name="correo" type="text" id="correo" class="correo" placeholder="Correo" />
+                        <input name="pass" type="password" id="pass" class="pass" placeholder="Contraseña">
+                        <input name="repass" type="password" id="repass" class="repass" placeholder="Repite contraseña" />
+ 
+                             <router-link to="/vendedor"> <button type="submit" title="Ingresar" name="Ingresar" >Acceder</button>
                                                                                          </router-link>
-
-                          </a> 
-
                           
 
                     </form>

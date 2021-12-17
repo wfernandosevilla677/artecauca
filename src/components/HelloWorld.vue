@@ -1,4 +1,5 @@
 <template>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +14,6 @@
 <link rel="icon" href="/assets/Iconos/Isotipo_icono.ico">
 
 <body>
-   
 
     <hr>
     <br>
@@ -35,7 +35,7 @@
                 <router-link to="/comprador" >
                              <li><a class="usa">Comprar</a></li>
                 </router-link>
-                <router-link to="/vendedor">
+                <router-link to="/registroven">
              <li><a class="usa">Vender</a></li>
                 </router-link>
 
@@ -50,17 +50,17 @@
 			<div class="slide-inner">
 				<input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden="" checked="checked">
 				<div class="slide-item">
-              <img alt="Vue logo" src="../assets/Artesanias/artesanias cauca (1).jpeg"/>
+              <img alt="Vue logo" src="../assets/Artesanias/m1.jpeg"/>
 				</div>
 
 				<input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
 				<div class="slide-item">
-					<img src="/Imágenes/Artesanias/artesanias cauca (10).jpeg">
+					<img src="../assets/Artesanias/c1.jpeg">
 				</div>
 
 				<input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
 				<div class="slide-item">
-					<img src="/Imágenes/Artesanias/artesanias cauca (11).jpeg">
+					<img src="../assets/Artesanias/ar1.jpeg">
 
 				</div>
 				<label for="slide-3" class="slide-control prev control-1">‹</label>

@@ -42,6 +42,65 @@ const routes: Array<RouteConfig> = [
     name: "Producto",
     component:()=>
     import("../views/Producto.vue"),
+  },
+  {
+    path:"/acerca",
+    name:"Acerca",
+    component:()=>
+    import("../views/Acerca.vue"),
+  },
+  {
+    path:"/registroven",
+    name:"RegistroVen",
+    component:()=>
+    import("../views/RegistroVen.vue"),
+  },{
+    path:"/correctoven",
+    name:"CorrectoVen",
+    component:()=>
+    import("../views/CorrectoVen.vue"),
+  },
+  {
+    path:"/manillasven",
+    name:"ManillasVen",
+    component:()=>
+    import("../views/ManillasVen.vue"),
+  },
+  {
+    path:"/collaresven",
+    name:"CollaresVen",
+    component:()=>
+    import("../views/CollaresVen.vue"),
+  },
+  {
+    path:"/aretesven",
+    name:"AretesVen",
+    component:()=>
+    import("../views/AretesVen.vue"),
+  },
+  {
+    path:"/manillascom",
+    name:"ManillasCom",
+    component:()=>
+    import("../views/ManillasCom.vue"),
+  },
+  {
+    path:"/collarescom",
+    name:"CollaresCom",
+    component:()=>
+    import("../views/CollaresCom.vue"),
+  },
+  {
+    path:"/bolsoscom",
+    name:"BolsosCom",
+    component:()=>
+    import("../views/BolsosCom.vue"),
+  },
+  {
+    path:"/correctocom",
+    name:"CorrectoCom",
+    component:()=>
+    import("../views/CorrectoCom.vue"),
   }
 ];
 

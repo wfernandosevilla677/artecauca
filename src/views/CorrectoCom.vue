@@ -2,62 +2,14 @@
   <div>
 
 <body>
-        <RegistroC /> <br>       
+        <RegistroC /> <br>   
+        <h3>Se ha Registrado correctamente su producto: </h3> 
+        <br>
+<router-link to="/comprador"><button type="button" class="btnx btn-primary btn-lg">Comprar otro Producto</button></router-link><br><br>
+<br> <br><br>
 
-        <div class="enlace">
-            <h2>Categoría</h2>
-            <section >
-           <router-link to="/vendedor"><a class="link">Bolsos</a> </router-link> 
-           <router-link to="/aretesven" > <a class="link">Aretes</a></router-link>
-           <router-link to="/collaresven" > <a class="link">Collares</a></router-link>
-           <router-link to="/manillasven" > <a class="link">Manillas</a></router-link>
- 
-
-        </section>
-        </div>
-
-
-         
-
-          <fieldset>
-                                  <h1 >BOLSOS</h1>
-
-            <legend class="m">Filtro</legend>
-            <div>
-                <select >
-                    <h3>selecione la categoría</h3>
-                    <option class="a" value="1">Grande</option>
-                    <option class="a"  value="2">Mediano</option>
-                    <option  class="a"  value="3">Pequeño</option>
-                </select>
-                <select >
-                    <option class="a" value="1">Lana</option>
-                    <option class="a" value="1">Hilo</option>
-
-                </select>
-            </div>
-            <br>
-                 <table class="tabla">
-            <caption class="detalle">Detalles</caption>
-                        </table>    
-
-            </fieldset>
-   
-             <label for="file">Ingrese la imagen del producto: </label><br>
-            <input type="file"  id="file">
-                   <div>
-                    <label for="producto1">Dama</label>
-                    <input id="producto1" type="radio" name="producto">
-                    <label for="producto2">Caballero</label>
-                    <input id="producto2" type="radio"  name="producto" ><br>
-  
-                    
-                </div>
-                                  <router-link to="/correctoven">
-                                  <br>
-<button type="button" class="btn btn-primary">Registrar Producto</button></router-link>
-                <br><br>
-            
+<h6>Gracias por preferirnos</h6>
+<br> <br>
 
 <header class="infor">
     <section class="contactos">
@@ -261,6 +213,4 @@ body{
     }
     
 }
-
-
 </style>

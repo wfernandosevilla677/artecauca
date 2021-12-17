@@ -2,7 +2,7 @@
   <div>
     <div>
 
-<router-link to="/registrarse" >
+<router-link to="/acerca" >
       <nav id="menu">
         <ul>
          <li><a>Acerca de nosotros</a></li>

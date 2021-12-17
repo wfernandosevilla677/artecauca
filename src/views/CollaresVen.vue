@@ -6,7 +6,7 @@
 
         <div class="enlace">
             <h2>Categoría</h2>
-            <section >
+             <section >
            <router-link to="/vendedor"><a class="link">Bolsos</a> </router-link> 
            <router-link to="/aretesven" > <a class="link">Aretes</a></router-link>
            <router-link to="/collaresven" > <a class="link">Collares</a></router-link>
@@ -20,7 +20,7 @@
          
 
           <fieldset>
-                                  <h1 >BOLSOS</h1>
+                                  <h1 >Collares</h1>
 
             <legend class="m">Filtro</legend>
             <div>

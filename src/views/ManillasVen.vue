@@ -20,7 +20,7 @@
          
 
           <fieldset>
-                                  <h1 >BOLSOS</h1>
+                                  <h1 >Manillas</h1>
 
             <legend class="m">Filtro</legend>
             <div>
