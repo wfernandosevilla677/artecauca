@@ -2,30 +2,11 @@
   <div>
     <div>
 
-<router-link to="/acerca" >
-      <nav id="menu">
-        <ul>
-         <li><a>Acerca de nosotros</a></li>
-        </ul>
-            </nav>
-</router-link>
 
-<router-link to="/producto" >
-      <nav id="menu">
-        <ul>
-         <li><a >Productos</a></li>
 
-        </ul>
-            </nav>
-</router-link>
 
-<router-link to="">
-      <nav id="menu">
-        <ul>
-         <li><a>Contactenos</a></li>
-        </ul>
-            </nav>
-</router-link>
+
+
 
       <router-link to="/">
           <nav id="menu">
